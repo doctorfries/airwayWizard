@@ -20,25 +20,191 @@
 
         <label for="sex">Sex</label>
         <select id="sex">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="female">Non-binary</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-binary">Non-binary</option>
         </select>
 
-        <label for="height">Height in cm:</label>
+        <label for="diag">Current diagnosis (leave empty if N/A)</label>
+        <input type="text" id="diag">
+
+        <label for="proc">Emergent surgical procedure (leave empty if N/A)</label>
+        <input type="text" id="proc">
+
+        <label for="height">Height (cm)</label>
         <input type="number" id="height" min="0" step="0.1">
 
-        <label for="weight">Weight in lbs:</label>
+        <label for="weight">Weight (lb)</label>
         <input type="number" id="weight" min="0" step="0.1">
 
-        <label for="mallampatti">Mallampatti Grade:</label>
-        <select id="mallampatti">
+        <label for="bmi">BMI</label>
+        <input type="number" id="bmi" min="0" step="0.1">
+
+        <label for="hr">Heart Rate (bpm)</label>
+        <input type="number" id="hr" min="0" step="1">
+
+        <label for="rr">Respirstory Rate (/min)</label>
+        <input type="number" id="rr" min="0" step="1">
+
+        <label for="sbp">Systolic Blood Pressure (mmHg)</label>
+        <input type="number" id="sbp" min="0" step="1">
+
+        <label for="dbp">Diastolic Blood Pressure (mmHg)</label>
+        <input type="number" id="dbp" min="0" step="1">        
+
+        <label for="asa">ASA Classification:</label>
+        <select id="asa">
             <option value="NA">NA</option>
             <option value="I">I</option>
             <option value="II">II</option>
             <option value="III">III</option>
             <option value="IV">IV</option>
+            <option value="V">V</option>
+            <option value="VI">VI</option>
         </select>
+
+        <label for="mallampatti">Modified Mallampati Score:</label>
+        <select id="mallampatti">
+            <option value="NA">NA</option>
+            <option value="0">0</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+        </select>
+
+        <label for="hyomental">Hyomental distance (cm)</label>
+        <input type="number" id="hyomental" min="0" step="0.1">
+
+        <label for="thyromental">Thyromental distance (cm)</label>
+        <input type="number" id="thyromental" min="0" step="0.1">
+
+        <label for="thd">Thyro-hyoid distance (cm)</label>
+        <input type="number" id="thd" min="0" step="0.1">
+
+        <label for="sternomental">Sternomental distance (cm)</label>
+        <input type="number" id="sternomental" min="0" step="0.1">
+
+        <label for="mouth">Mouth opening / Inter-incisor distance (cm)</label>
+        <input type="number" id="mouth" min="0" step="0.1">
+
+        <label for="flexion">Neck movement: Flexion (degree)</label>
+        <input type="number" id="flexion" min="0" max="360" step="1">
+
+        <label for="extension">Neck movement: Extension (degree)</label>
+        <input type="number" id="extension" min="0" max="360" step="1">
+
+        <label for="jaw">Jaw movement (degree)</label>
+        <input type="number" id="jaw" min="0" max="360" step="1">
+
+        <label for="mandible">Receding mandible present?</label>
+        <select id="mandible">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="micro">Micrognathia present?</label>
+        <select id="micro">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="buck">Buck teeth?</label>
+        <select id="buck">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="loose">Loose teeth?</label>
+        <select id="loose">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="ulbt">Upper Lip Bite Test (ULBT)</label>
+        <select id="ulbt">
+            <option value="NA">NA</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+        </select>
+
+        <label for="obstetric">Obstetric patient?</label>
+        <select id="obstetric">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="fasting">Fasting?</label>
+        <select id="fasting">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="diffAir">History of difficult airway?</label>
+        <select id="diffAir">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="diffInt">History of difficult intubation?</label>
+        <select id="diffInt">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="cervical">Cervical trauma?</label>
+        <select id="cervical">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="facio">Faciomaxillary trauma?</label>
+        <select id="facio">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="irrad">Previous neck irraditaion?</label>
+        <select id="irrad">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="obstruction">Airway obstruction present?</label>
+        <select id="obstruction">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="beard">Beard present?</label>
+        <select id="beard">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="apnea">History of obstructive sleep apnea?</label>
+        <select id="apnea">
+            <option value="NA">NA</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="radio">Radiology report findings (leave empty if N/A)</label>
+        <input type="text" id="radio">
 
         <button type="submit">Generate Prompt</button>
     </form>
